@@ -1,0 +1,23 @@
+<div id="content" class="aboutus">
+  <section>
+    <div class="container">
+      <div class="row-fluid">
+	      <div class="span5">
+					<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=midtown+plaza+Accra+Road,+Nairobi,+Kenya&amp;aq=&amp;sll=-1.285196,36.826322&amp;sspn=0.008602,0.014645&amp;ie=UTF8&amp;hq=midtown+plaza&amp;hnear=Accra+Rd,+City+Square,+Nairobi,+Nairobi+Province,+Kenya&amp;t=m&amp;ll=-1.283335,36.826454&amp;spn=0.006295,0.006295&amp;output=embed"></iframe><br /><small><a href="https://www.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=midtown+plaza+Accra+Road,+Nairobi,+Kenya&amp;aq=&amp;sll=-1.285196,36.826322&amp;sspn=0.008602,0.014645&amp;ie=UTF8&amp;hq=midtown+plaza&amp;hnear=Accra+Rd,+City+Square,+Nairobi,+Nairobi+Province,+Kenya&amp;t=m&amp;ll=-1.283335,36.826454&amp;spn=0.006295,0.006295" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+         </div>
+        <div class="span7">
+          <h2 class="ubuntu"><%= @page.title %></h2>
+          <%= simple_format @page.try(:short_description)     %>
+        </div>
+      </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row-fluid">
+        <div class="span7">
+          <h2 class="ubuntu">Regional Offices</h2>
+          <%= simple_format @page.try(:long_description) %>
+        </div>
+      </div>
+  </section>
+</div>

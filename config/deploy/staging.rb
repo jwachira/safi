@@ -6,7 +6,7 @@ set :port, 8389
 set :branch,    "master"
 set :db_user,        "root"
 set :db_password,    "root"
-set :url,            "staging.eco-incubators.com"
+set :url,            "eco-incubators.com"
 set :db_adapter,     "mysql2"
 set :db_encoding,    "utf8"
 set :remote_db_name, "ecoincubators_staging"
