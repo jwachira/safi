@@ -20,11 +20,11 @@ class Page < ActiveRecord::Base
   end
 
   def self.carousel
-    Page.scoped(:joins => :category, :conditions => ["categories.name =?", 'Home Carousel'], :limit => 10)
+    Page.scoped(:joins => :category, :conditions => ["categories.name =?", 'Home Carousel'], :limit => 3)
   end
 
   def self.top_selling
-    Page.scoped(:joins => :category, :conditions => ["categories.name =?", 'Top Selling Incubators'], :limit => 3)
+    Page.scoped(:joins => :category, :conditions => ["categories.name =?", 'Top Selling'], :limit => 3)
   end
 
   def self.about_us
@@ -44,7 +44,7 @@ class Page < ActiveRecord::Base
   end
 
   def self.products
-    Page.scoped(:joins => :category, :conditions => ["categories.name =?", 'Products'])
+    Page.scoped(:joins => :category, :conditions => ["categories.name IN (?)", ['Products', 'Home Carousel','Top Selling']])
   end
 
   def self.customer_testimonials
