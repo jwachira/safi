@@ -4,22 +4,5 @@
 </div><!--/.navbar -->
 <div id="content">
   <%= render :partial => "top_selling" %>
-  <%= render :partial => "customer_testimonials" %>
-  <section id="reasons">
-    <div class="container">
-      <h2 class="ubuntu">Why you should use Eco-Incubators</h2>
-      <div class="row-fluid">
-	      <% @product_usp.in_groups_of(3, false).each do |pages| %>
-	        <div class="span4">
-		        <% pages.each do |page| %>
-	  	        <div class="reason <%= cycle('third', 'second', 'first', 'fourth') %>">
-		            <h3><%= page.title %></h3>
-		            <p><%= page.short_description %></p>
-		          </div>
-		        <% end %>
-	        </div>
-       <% end %>
-      </div>
-    </div>
-  </section>
+  <%#= render :partial => "customer_testimonials" %>
 </div>

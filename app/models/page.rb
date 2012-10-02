@@ -20,7 +20,7 @@ class Page < ActiveRecord::Base
   end
 
   def self.carousel
-    Page.scoped(:joins => :category, :conditions => ["categories.name =?", 'Home Carousel'], :limit => 3)
+    Page.scoped(:joins => :category, :conditions => ["categories.name =?", 'Home Carousel'], :limit => 10)
   end
 
   def self.top_selling
